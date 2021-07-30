@@ -1,0 +1,751 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Atlantic Secondary School</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ <link href="{% static 'Home/assets/img/logo.jpg' %}" rel="icon">
+  <link href="{% static 'Home/assets/img/logo.jpg' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'Home/assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'Home/assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'Home/assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'Home/assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'Home/assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'Home/assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'Home/assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+
+<link href="{% static 'Home/assets/css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mamba - v4.3.0
+  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@atlantictz.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> 0657246624
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="{% url 'home' %}">ATLANTIC SCHOOLS</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{% url 'home' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Admission</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'news' %}">News</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Staff</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Teachers</a></li>
+
+
+
+              <li><a href="#">Non-Teachers</a></li>
+
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('{% static  'Home/assets/img/slide/new2.jpg'%}');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Atlantic School</span></h2>
+                <p class="animate__animated animate__fadeInUp">Nafasi za masomo kwa mwaka 2021/2022 zipo kwa Olevel na Advance michepuo yote.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">JISAJILI</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('{% static 'Home/assets/img/slide/girls.jpg'%}');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Atlantic Education Centre</h2>
+                <p class="animate__animated animate__fadeInUp">Nafasi za masomo kwa mwaka 2021/2022 zipo kwa Olevel na Advance michepuo yote.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">JISAJILI</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('{% static 'Home/assets/img/slide/tour.jpg'%}');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Alantic School</h2>
+                <p class="animate__animated animate__fadeInUp">Nafasi za masomo kwa mwaka 2021/2022 zipo kwa Olevel na Advance michepuo yote.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">JISAJILI</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+           <div class="col-lg-6 video-box">
+            <img src="{% static 'Home/assets/img/sc.jpg'%}" class="img-fluid" alt="" style="height: 70vh; width:80vh;">
+
+          </div>
+
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+            <div class="section-title">
+              <h2>About Us</h2>
+              <p>We are education academy currently located at  Ilala Boma, Dar es Salaam. We teach all basic subjects and and their combination for advanced level for private candidates students.</p>
+            </div>
+            <h3>WHY CHOOSE ATLANTIC.</h3>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-group"></i></div>
+              <h4 class="title"><a href="">Expert Teachers</a></h4>
+              <p class="description">We have amaizing and excellence teachers for both art and science subjects</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-bar-chart-alt"></i></div>
+              <h4 class="title"><a href="">GROWING COMMUNITY</a></h4>
+              <p class="description">With more than 300 students, our community is growing each year and good performance is the reason why.</p>
+            </div>
+             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-bed"></i></div>
+              <h4 class="title"><a href="">ACCOMODATIOn</a></h4>
+              <p class="description">We provide good and affordable hostels to students living far from academy.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<!-- End About Us Section -->
+
+    <!-- ======= About Lists Section ======= -->
+   <!-- <section class="about-lists">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
+            <span>01</span>
+            <h4>Lorem Ipsum</h4>
+            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
+            <span>02</span>
+            <h4>Repellat Nihil</h4>
+            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
+            <span>03</span>
+            <h4> Ad ad velit qui</h4>
+            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+            <span>04</span>
+            <h4>Repellendus molestiae</h4>
+            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="400">
+            <span>05</span>
+            <h4>Sapiente Magnam</h4>
+            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="500">
+            <span>06</span>
+            <h4>Facilis Impedit</h4>
+            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>-->
+
+    <!-- ======= Counts Section ======= -->
+   <!-- <section class="counts section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-simple-smile" style="color: #20b38e;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-document-folder" style="color: #c042ff;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="count-box">
+              <i class="bi bi-live-support" style="color: #46d1ff;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="count-box">
+              <i class="bi bi-users-alt-5" style="color: #ffb459;"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+          <h2>LATEST NEWS</h2>
+
+        </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="news-slider" class="owl-carousel">
+              {% for post in posts %}
+                <div class="post-slide">
+                    <div class="post-img">
+                        <span class="over-layer"></span>
+                        <img src="{{ post.image_thumbnail.url}}" alt="">
+                    </div>
+                    <h3 class="post-title">
+                        <a href="{% url 'news_detail' post.id%}">{{post.tittle}}</a>
+                    </h3>
+                    <span class="post-date">{{post.date|date:"F d, Y" }}</span>
+                </div>
+                  {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+ </div>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-megaphone"></i></div>
+            <h4 class="title"><a href="">Our Motto</a></h4>
+            <p class="description">A better learning future starts here.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-bullseye"></i></div>
+            <h4 class="title"><a href="">Mission</a></h4>
+            <p class="description"> Our Mission is to provide high quality education in a safe, respectful and inclusive environment that builds a foundation for life-long learning.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-eye"></i></div>
+            <h4 class="title"><a href="">Vision</a></h4>
+            <p class="description">Our school will foster an environment to nurture individuals academically, socially, and emotionally so that they are equipped to tackle academic challenges and become productive members of society.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Our Images</h2>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'Home/assets/img/portfolio/girls.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <div class="portfolio-links">
+                  <a href="{% static 'Home/assets/img/portfolio/girls.jpg'%}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'Home/assets/img/portfolio/sisi.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'Home/assets/img/portfolio/sisi.jpg'%}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'Home/assets/img/portfolio/allan.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+
+                <div class="portfolio-links">
+                  <a href="{% static 'Home/assets/img/portfolio/allan.jpg'%}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'Home/assets/img/portfolio/sengo.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'Home/assets/img/portfolio/sengo.jpg'%}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3>Our Hardworking <span>Teachers</span></h3>
+          <p>View more to get the full list.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'Home/assets/img/team/allan.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Allan Sengo</h4>
+                <span>History Teacher and Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'Home/assets/img/team/mick.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sir Mick</h4>
+                <span>Geography Teacher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'Home/assets/img/team/madam.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Madam Sarah</h4>
+                <span>Economics and Statistics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'Home/assets/img/team/alimacius.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sir Alimachius</h4>
+                <span>Language Advance</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!--<section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="row  d-flex align-items-stretch">
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up">
+            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
+            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="200">
+            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
+            <p>
+              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="300">
+            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+            <p>
+              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+            </p>
+          </div>
+
+          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="500">
+            <h4>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h4>
+            <p>
+              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com<br>contact@example.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box ">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+            </div>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+             <div class="col-lg-6 ">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126775.46002593166!2d39.22657258211182!3d-6.802285807772316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4bb3f158ab2b%3A0x1ba6c4a9325f4fe4!2sBoma%20Bus%20Stop!5e0!3m2!1sen!2stz!4v1625782870992!5m2!1sen!2stz" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+            <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-lg-6 ">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Atlantic School</h3>
+            <p>
+              BOX 8445 <br>
+              Dar es Salaam, Tanzania<br><br>
+              <strong>Phone:</strong>0654246624<br>
+              <strong>Email:</strong> info@atlantictz.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Admission</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'news' %}">News</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter to be notified with all the news and events updated!</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Atlantic School</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'Home/assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'Home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'Home/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'Home/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'Home/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'Home/assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'Home/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+ <script src="{% static 'Home/assets/js/main.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#news-slider").owlCarousel({
+        items : 4,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        pagination:true,
+        autoPlay:true
+    });
+});
+</script>
+
+</body>
+
+</html>
